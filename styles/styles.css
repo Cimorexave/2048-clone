@@ -3,6 +3,6 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.app {
+body {
     background: var(--clr-bg);
 }
