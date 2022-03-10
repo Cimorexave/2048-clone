@@ -1,2 +1,8 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+:root {
+    --clr-bg: #191919;
+    font-family: 'Courier New', Courier, monospace;
+}
 
+.app {
+    background: var(--clr-bg);
+}
