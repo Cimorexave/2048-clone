@@ -78,6 +78,8 @@ p {
 }
 .dialog p {
     font-size: 1.2rem;
+    position: absolute;
+    left: 10%;
 }
 .dialog::backdrop {
     opacity: 0.8;
