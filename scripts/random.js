@@ -10,14 +10,20 @@ const randomBlockGenerator = () => {
     //this will give the result as if which block should light up with
     //a new number and it's made sure by the loop that 0 is not included
     let block;
+    //test start
+    result = 1;
+    //test end
     switch (result) {
         case 1: 
             block = document.querySelector('.one');
             console.log(block);
-            for (child in block.classList) {
-                console.log(child)
-                if (child == "occupied")
+            for (let i =0; i < block.classList.length; i++) {
+                console.log(block.classList[i])
+                if (block.classList[i] !== "occupied") {
                     block.classList.add('occupied');
+                    //console.log(block.childNodes[0].innerHtml);
+                    block.childNodes[0].innerText = 2;
+                }
             }
             break;
         case 2:
