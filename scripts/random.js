@@ -27,7 +27,7 @@ const randomBlockGenerator = () => {
     //test start
     //result = 1;
     //test end
-    if (esc >= 9)
+    if (esc > 9)
      GameOver();
     //esc = 0;
     switch (result) {
