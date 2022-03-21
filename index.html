@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
     <title>2048 clone</title>
 </head>
 <body>
@@ -31,6 +31,11 @@
             </div>
         </div>
     </div>
-    <script src="./scripts/random.js"></script>
+    <dialog class="dialog">
+        <h1>You lost</h1>
+        <p>press esc on your keyboard to exit</p>
+    </dialog>
+    <script src="./scripts/random.js" ></script>
+    <script src="./scripts/lost.js" type="module"></script>
 </body>
 </html>

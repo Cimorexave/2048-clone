@@ -14,7 +14,7 @@ body {
 header {
     width: 500px;
     height: 100px;
-    background: pink;
+    background: burlywood;
     margin-bottom: 1em;
     display: flex;
     justify-content: space-evenly;
@@ -65,4 +65,21 @@ p {
     text-align: center;
     font-weight: bolder;
     position: absolute;
+}
+.dialog {
+    width: 500px;
+    height: 10rem;
+    border: solid black 5px;
+    border-radius: 20px;
+    background-color: burlywood;
+}
+.dialog > * {
+    text-align: center;
+}
+.dialog p {
+    font-size: 1.2rem;
+}
+.dialog::backdrop {
+    opacity: 0.8;
+    background-color: black;
 }

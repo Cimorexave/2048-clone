@@ -1,10 +1,19 @@
+//import {GameOver} from "./lost.js";
+//GameOver = require("./lost");
+
+
+const GameOver = () => {
+    const dialog = document.querySelector(".dialog");
+    dialog.showModal();
+}
+
 
 const twoOrFour = () => {
     return (
         Math.random() >= 0.5 ? 2 : 4
     )
 }
-
+var esc = 0;
 const randomBlockGenerator = () => {
     //creating random number between one to nine
     let result;
@@ -18,6 +27,9 @@ const randomBlockGenerator = () => {
     //test start
     //result = 1;
     //test end
+    if (esc >= 9)
+     GameOver();
+    //esc = 0;
     switch (result) {
         case 1: 
             block = document.querySelector('.one');
@@ -26,6 +38,7 @@ const randomBlockGenerator = () => {
                 console.log(block.classList[i])
                 if (block.classList[i] == "occupied") {
                     console.log("Repeating...")
+                    esc++;
                     randomBlockGenerator();
                 }/*  else if (block.classList[i] != "occupied") {
                     block.classList.add('occupied');
@@ -45,6 +58,7 @@ const randomBlockGenerator = () => {
             for (let i =0; i < block.classList.length; i++) {
                 console.log(block.classList[i])
                 if (block.classList[i] == "occupied") {
+                    esc++;
                     randomBlockGenerator();
                     console.log("Repeating...")
                 }/*  else if (block.classList[i] != "occupied") {
@@ -65,6 +79,7 @@ const randomBlockGenerator = () => {
             for (let i =0; i < block.classList.length; i++) {
                 console.log(block.classList[i])
                 if (block.classList[i] == "occupied") {
+                    esc++;
                     randomBlockGenerator();
                     console.log("Repeating...")
                 }/*  else if (block.classList[i] != "occupied") {
@@ -85,6 +100,7 @@ const randomBlockGenerator = () => {
             for (let i =0; i < block.classList.length; i++) {
                 console.log(block.classList[i])
                 if (block.classList[i] == "occupied") {
+                    esc++;
                     randomBlockGenerator();
                     console.log("Repeating...")
                 }/*  else if (block.classList[i] != "occupied") {
@@ -104,6 +120,7 @@ const randomBlockGenerator = () => {
             for (let i =0; i < block.classList.length; i++) {
                 console.log(block.classList[i])
                 if (block.classList[i] == "occupied") {
+                    esc++;
                     randomBlockGenerator();
                     console.log("Repeating...")
                 }/*  else if (block.classList[i] != "occupied") {
@@ -124,6 +141,7 @@ const randomBlockGenerator = () => {
             for (let i =0; i < block.classList.length; i++) {
                 console.log(block.classList[i])
                 if (block.classList[i] == "occupied") {
+                    esc++;
                     randomBlockGenerator();
                     console.log("Repeating...")
                 }/*  else if (block.classList[i] != "occupied") {
@@ -144,6 +162,7 @@ const randomBlockGenerator = () => {
             for (let i =0; i < block.classList.length; i++) {
                 console.log(block.classList[i])
                 if (block.classList[i] == "occupied") {
+                    esc++;
                     randomBlockGenerator();
                     console.log("Repeating...")
                 }/*  else if (block.classList[i] != "occupied") {
@@ -164,6 +183,7 @@ const randomBlockGenerator = () => {
             for (let i =0; i < block.classList.length; i++) {
                 console.log(block.classList[i])
                 if (block.classList[i] == "occupied") {
+                    esc++;
                     randomBlockGenerator();
                     console.log("Repeating...")
                 }/*  else if (block.classList[i] != "occupied") {
@@ -184,6 +204,7 @@ const randomBlockGenerator = () => {
             for (let i =0; i < block.classList.length; i++) {
                 console.log(block.classList[i])
                 if (block.classList[i] == "occupied") {
+                    esc++;
                     randomBlockGenerator();
                     console.log("Repeating...")
                 }/*  else if (block.classList[i] != "occupied") {
@@ -204,5 +225,6 @@ const randomBlockGenerator = () => {
     //before, it has to make sure that the block isn't already occupied
 }
 randomBlockGenerator();
+//export {randomBlockGenerator}
 
 
