@@ -1,17 +1,22 @@
 
+const twoOrFour = () => {
+    return (
+        Math.random() >= 0.5 ? 2 : 4
+    )
+}
 
 const randomBlockGenerator = () => {
     //creating random number between one to nine
     let result;
      do {
-         result = Math.floor(Math.random()*9); 
+         result = Math.floor(Math.random()*10); 
      } while (result < 1);
     console.log(result);
     //this will give the result as if which block should light up with
     //a new number and it's made sure by the loop that 0 is not included
     let block;
     //test start
-    result = 1;
+    //result = 1;
     //test end
     switch (result) {
         case 1: 
@@ -19,84 +24,179 @@ const randomBlockGenerator = () => {
             console.log(block);
             for (let i =0; i < block.classList.length; i++) {
                 console.log(block.classList[i])
-                if (block.classList[i] !== "occupied") {
+                if (block.classList[i] == "occupied") {
+                    console.log("Repeating...")
+                    randomBlockGenerator();
+                }/*  else if (block.classList[i] != "occupied") {
                     block.classList.add('occupied');
                     //console.log(block.childNodes[0].innerHtml);
-                    block.childNodes[0].innerText = 2;
-                }
+                    block.childNodes[0].innerText = twoOrFour();
+                    break;
+                } */
             }
+            block.classList.add('occupied');
+            //console.log(block.childNodes[0].innerHtml);
+            if (block.childNodes[0].innerText == "")
+                block.childNodes[0].innerText = twoOrFour();
             break;
         case 2:
             block = document.querySelector('.two');
             console.log(block);
-            for (child in block.classList) {
-                console.log(child)
-                if (child == "occupied")
+            for (let i =0; i < block.classList.length; i++) {
+                console.log(block.classList[i])
+                if (block.classList[i] == "occupied") {
+                    randomBlockGenerator();
+                    console.log("Repeating...")
+                }/*  else if (block.classList[i] != "occupied") {
                     block.classList.add('occupied');
+                    //console.log(block.childNodes[0].innerHtml);
+                    block.childNodes[0].innerText = twoOrFour();
+                    break;
+                } */
             }
+            block.classList.add('occupied');
+            //console.log(block.childNodes[0].innerHtml);
+            if (block.childNodes[0].innerText == "")
+                block.childNodes[0].innerText = twoOrFour();
             break;
         case 3:
             block = document.querySelector('.three');
             console.log(block);
-            for (child in block.classList) {
-                console.log(child)
-                if (child == "occupied")
+            for (let i =0; i < block.classList.length; i++) {
+                console.log(block.classList[i])
+                if (block.classList[i] == "occupied") {
+                    randomBlockGenerator();
+                    console.log("Repeating...")
+                }/*  else if (block.classList[i] != "occupied") {
                     block.classList.add('occupied');
+                    //console.log(block.childNodes[0].innerHtml);
+                    block.childNodes[0].innerText = twoOrFour();
+                    break;
+                } */
             }
+            block.classList.add('occupied');
+            //console.log(block.childNodes[0].innerHtml);
+            if (block.childNodes[0].innerText == "")
+                block.childNodes[0].innerText = twoOrFour();
             break;  
         case 4:
             block = document.querySelector('.four');
             console.log(block);
-            for (child in block.classList) {
-                console.log(child)
-                if (child == "occupied")
+            for (let i =0; i < block.classList.length; i++) {
+                console.log(block.classList[i])
+                if (block.classList[i] == "occupied") {
+                    randomBlockGenerator();
+                    console.log("Repeating...")
+                }/*  else if (block.classList[i] != "occupied") {
                     block.classList.add('occupied');
+                    //console.log(block.childNodes[0].innerHtml);
+                    block.childNodes[0].innerText = twoOrFour();
+                    break;
+                } */
             }
+            block.classList.add('occupied');
+            //console.log(block.childNodes[0].innerHtml);
+            if (block.childNodes[0].innerText == "")
+                block.childNodes[0].innerText = twoOrFour();
             break; 
         case 5:
             block = document.querySelector('.five');
-            console.log(block);
-            for (child in block.classList) {
-                console.log(child)
-                if (child == "occupied")
+            for (let i =0; i < block.classList.length; i++) {
+                console.log(block.classList[i])
+                if (block.classList[i] == "occupied") {
+                    randomBlockGenerator();
+                    console.log("Repeating...")
+                }/*  else if (block.classList[i] != "occupied") {
                     block.classList.add('occupied');
+                    //console.log(block.childNodes[0].innerHtml);
+                    block.childNodes[0].innerText = twoOrFour();
+                    break;
+                } */
             }
+            block.classList.add('occupied');
+            //console.log(block.childNodes[0].innerHtml);
+            if (block.childNodes[0].innerText == "")
+                block.childNodes[0].innerText = twoOrFour();
             break; 
         case 6:
             block = document.querySelector('.six');
             console.log(block);
-            for (child in block.classList) {
-                console.log(child)
-                if (child == "occupied")
+            for (let i =0; i < block.classList.length; i++) {
+                console.log(block.classList[i])
+                if (block.classList[i] == "occupied") {
+                    randomBlockGenerator();
+                    console.log("Repeating...")
+                }/*  else if (block.classList[i] != "occupied") {
                     block.classList.add('occupied');
+                    //console.log(block.childNodes[0].innerHtml);
+                    block.childNodes[0].innerText = twoOrFour();
+                    break;
+                } */
             }
+            block.classList.add('occupied');
+            //console.log(block.childNodes[0].innerHtml);
+            if (block.childNodes[0].innerText == "")
+                block.childNodes[0].innerText = twoOrFour();
             break; 
         case 7:
             block = document.querySelector('.seven');
             console.log(block);
-            for (child in block.classList) {
-                console.log(child)
-                if (child == "occupied")
+            for (let i =0; i < block.classList.length; i++) {
+                console.log(block.classList[i])
+                if (block.classList[i] == "occupied") {
+                    randomBlockGenerator();
+                    console.log("Repeating...")
+                }/*  else if (block.classList[i] != "occupied") {
                     block.classList.add('occupied');
+                    //console.log(block.childNodes[0].innerHtml);
+                    block.childNodes[0].innerText = twoOrFour();
+                    break;
+                } */
             }
+            block.classList.add('occupied');
+            //console.log(block.childNodes[0].innerHtml);
+            if (block.childNodes[0].innerText == "")
+                block.childNodes[0].innerText = twoOrFour();
             break; 
         case 8:
             block = document.querySelector('.eight');
             console.log(block);
-            for (child in block.classList) {
-                console.log(child)
-                if (child == "occupied")
+            for (let i =0; i < block.classList.length; i++) {
+                console.log(block.classList[i])
+                if (block.classList[i] == "occupied") {
+                    randomBlockGenerator();
+                    console.log("Repeating...")
+                }/*  else if (block.classList[i] != "occupied") {
                     block.classList.add('occupied');
+                    //console.log(block.childNodes[0].innerHtml);
+                    block.childNodes[0].innerText = twoOrFour();
+                    break;
+                } */
             }
+            block.classList.add('occupied');
+            //console.log(block.childNodes[0].innerHtml);
+            if (block.childNodes[0].innerText == "")
+                block.childNodes[0].innerText = twoOrFour();
             break; 
         case 9:
             block = document.querySelector('.nine');
             console.log(block);
-            for (child in block.classList) {
-                console.log(child)
-                if (child == "occupied")
+            for (let i =0; i < block.classList.length; i++) {
+                console.log(block.classList[i])
+                if (block.classList[i] == "occupied") {
+                    randomBlockGenerator();
+                    console.log("Repeating...")
+                }/*  else if (block.classList[i] != "occupied") {
                     block.classList.add('occupied');
+                    //console.log(block.childNodes[0].innerHtml);
+                    block.childNodes[0].innerText = twoOrFour();
+                    break;
+                } */
             }
+            block.classList.add('occupied');
+            //console.log(block.childNodes[0].innerHtml);
+            if (block.childNodes[0].innerText == "")
+                block.childNodes[0].innerText = twoOrFour();
             break; 
     }
     //each number connects to the coresponding block number
