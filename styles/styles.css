@@ -85,3 +85,8 @@ p {
     opacity: 0.8;
     background-color: black;
 }
+.ctrl {
+    position: absolute;
+    right: 3em;
+    top: 3em;
+}

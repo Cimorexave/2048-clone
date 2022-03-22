@@ -27,8 +27,10 @@ const randomBlockGenerator = () => {
     //test start
     //result = 1;
     //test end
-    if (esc > 9)
-     GameOver();
+    if (esc > 10) {
+        GameOver();
+        esc = 0;
+    }
     //esc = 0;
     switch (result) {
         case 1: 
@@ -224,6 +226,8 @@ const randomBlockGenerator = () => {
     //it will attach the occupied class to that block
     //before, it has to make sure that the block isn't already occupied
 }
+
+
 randomBlockGenerator();
 //export {randomBlockGenerator}
 
