@@ -13,6 +13,8 @@ const twoOrFour = () => {
         Math.random() >= 0.5 ? 2 : 4
     )
 }
+
+
 var esc = 0;
 const randomBlockGenerator = () => {
     //creating random number between one to nine
