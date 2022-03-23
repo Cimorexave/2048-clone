@@ -230,7 +230,7 @@ const randomBlockGenerator = () => {
 }
 
 
-randomBlockGenerator();
+//randomBlockGenerator();
 //export {randomBlockGenerator}
 
 
