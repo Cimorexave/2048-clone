@@ -17,7 +17,8 @@ const ArrowRight = () => {
     console.log('Arrow Right key functions triggered...')
 }
 
-//first targeting the body and attaching the event to it so it can be triggered always
+//first targeting the body and attaching the event to it so it can be triggered 
+
 
 document.querySelector("body").addEventListener('keydown', () => {
     console.log('a key was pressed')
